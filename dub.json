@@ -1,0 +1,22 @@
+{
+	"authors"     : [ "Vital" ],
+	"copyright"   : "Copyright © 2021, Vitaliy Fadeev",
+	"description" : "D application, drawing triangle",
+	"license"     : "GPL3",
+	"name"        : "triangle",
+    "targetType"  : "library",
+    "configurations": 
+    [
+        {
+            "name"        : "linux-gl3",
+            "platforms"   : [ "linux" ],
+			"dependencies":
+			{
+	            "bindbc-loader" : "1.0.0",
+                "bindbc-opengl" : "1.0.0",
+                "gl3"           : "*"
+			},
+			"versions"    : [ "GLFW", "GL3" ],
+		},
+	]
+}
